@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5feee0dd2d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Photo Studio</title>
 </head>
@@ -13,21 +15,27 @@
     and the singin button -->
 
     <div class="header">
-        <div class="header_img">
-            <img src="images/logo.png" alt="">
+
+        <div class="mail">
+            <a href="mailto:photostudio@gmail.com">photostudio@gmail.com</a>
         </div>
 
-        <div class="signin_button">
-            <button>
-                <a href="/signin.html">Sign In</a>
-            </button>
+        <div class="header_img">
+            <img src="images/logo.png" alt="" id="home">
+        </div>
+
+        <div class="social_button">
+            <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
     </div>
 
     <div class="navbar">
         <nav>
-            <a href="/pricing.html">Pricing</a>
-            <a href="/portfolio.html">Portfolio</a>
+            <a href="#home" class="element">Home</a>
+            <a href="#portfolio" class="element">Portfolio</a>
+            <a href="#pricing" class="element">Pricing</a>
+            <a href="#contact" class="element">Contact</a>
         </nav>
     </div>
 
@@ -51,21 +59,122 @@
         </div>
     </div>
 
+    <!-- Description of the website and services -->
+
     <section class="description">
         <div class="description_body">
             <h2>More for less Price</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis, dicta aspernatur veritatis consequuntur soluta dolorum,
-                quod eaque repellat unde maxime vitae iusto iste laboriosam asperiores expedita perspiciatis minus placeat quia quasi qui aliquam?
-                At temporibus quisquam consectetur distinctio voluptates dolorum sed voluptatibus, et dolorem reiciendis, eos blanditiis asperiores incidunt?
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Atque iusto amet, iure inventore ullam dolores dignissimos,
+                fugiat aperiam natus nobis ea, asperiores blanditiis minus repudiandae obcaecati? Quis veritatis
+                ducimus praesentium dolor minima reiciendis qui mollitia porro nesciunt accusamus, possimus aliquam eum?
             </p>
 
             <h2>Watch for quality</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque fugit cum quod accusamus nulla aut,
-                est labore molestiae esse quis voluptatum ipsam earum eveniet quas veniam unde eum pariatur quidem et quasi eos! Velit, aspernatur deserunt
-                architecto vitae mollitia dolorem cumque aut harum? Nulla quas voluptate cumque possimus tempora.
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Atque iusto amet, iure inventore ullam dolores dignissimos,
+                fugiat aperiam natus nobis ea, asperiores blanditiis minus repudiandae obcaecati? Quis veritatis
+                ducimus praesentium dolor minima reiciendis qui mollitia porro nesciunt accusamus, possimus aliquam eum?
+
             </p>
         </div>
     </section>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio_preview">
+
+            <div class="image">
+                <label for="img" class="img_label">At night</label>
+                <a href="images/01.jpeg" target="_blank"><img src="images/01.jpeg" alt="" class="preview"></a>
+            </div>
+
+            <div class="image">
+                <label for="img" class="img_label">At the city</label>
+                <a href="images/02.jpeg" target="_blank"><img src="images/02.jpeg" alt="" class="preview"></a>
+            </div>
+
+            <div class="image">
+                <label for="img" class="img_label">At the forest</label>
+                <a href="images/03.jpeg" target="_blank"><img src="images/03.jpeg" alt="" class="preview"></a>
+            </div>
+
+            <div class="image">
+                <label for="img" class="img_label">Portrait</label>
+                <a href="images/04.jpeg" target="_blank"><img src="images/04.jpeg" alt="" class="preview"></a>
+            </div>
+
+
+            <div class="image">
+                <label for="img" class="img_label">Sunny day</label>
+                <a href="images/05.jpeg" target="_blank"><img src="images/05.jpeg" alt="" class="preview"></a>
+            </div>
+
+
+            <div class="image">
+                <label for="img" class="img_label">Or at any place</label>
+                <a href="images/06.jpeg" target="_blank"><img src="images/06.jpeg" alt="" class="preview"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Princig info -->
+
+    <div class="princing_info" id="pricing">
+
+        <h1>Pricing</h1>
+
+        <div class="card">
+            <h3>Free</h3>
+            <ul>
+                <li>1 Photo</li>
+                <li>1 Video</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>15 USD</h3>
+            <ul>
+                <li>3 Photos</li>
+                <li>3 Videos</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>50 USD</h3>
+            <ul>
+                <li>Unlimited Photos</li>
+                <li>Unlimited Videos</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- For more information contact form -->
+
+    <div class="contact_form" id="contact">
+        <fieldset>
+            <h2>Contact Form</h2>
+            <label for="name">Name</label>
+            <input type="text">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Accept Terms & Conditions</label>
+
+            <button>Submit</button>
+        </fieldset>
+    </div>
 
     <div class="footer">
         <a href="/about.html">About Us</a>
