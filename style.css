@@ -1,7 +1,7 @@
 a, a:hover, a:active{
     text-decoration: none;
     color: inherit;
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -9,7 +9,7 @@ body{
 }
 
 h1, h2, label{
-    font-family: 'Ribeye Marrow', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .header{
@@ -54,7 +54,6 @@ h2{
     font-size: 25px;
 }
 
-
 .navbar{
     background-color: rgb(234, 190, 13);
     color: white;
@@ -75,7 +74,6 @@ h2{
 }
 
 .element{
-    font-family: 'Times New Roman', Times, serif;
     margin: 0 50px;
     opacity: 1;
 }
@@ -125,7 +123,6 @@ h2{
     margin: 20px auto;
     padding: 10px 30px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 
